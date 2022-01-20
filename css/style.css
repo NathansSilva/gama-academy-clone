@@ -53,3 +53,22 @@ body {
   align-items: center;
   gap: 20px;
 }
+
+.green-bg {
+  background: var(--greencolor-1);
+}
+
+.green-content {
+  padding: 8px;
+  color: var(--greencolor-2);
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .green-content p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
