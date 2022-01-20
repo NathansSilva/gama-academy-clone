@@ -1,0 +1,55 @@
+@import "./global/global.css";
+@import "./global/cores.css";
+
+body {
+  background: var(--graycolor-1);
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.header-bg {
+  background: var(--whitecolor-1);
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.text-a {
+  color: var(--graycolor-2);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.812rem;
+  position: relative;
+}
+
+.text-a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: 7px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid var(--graycolor-2);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
